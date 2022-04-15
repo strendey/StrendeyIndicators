@@ -1,0 +1,16 @@
+[
+{
+  "modid": "strendeyindicators",
+  "name": "Strendey Indicators",
+  "description": "Displays the health of players next to the nick. Usage: /strendeyindicators or /si. Enjoy =D",
+  "version": "3.0",
+  "mcversion": "1.7.10",
+  "url": "https://github.com/strendey/StrendeyIndicators",
+  "updateUrl": "",
+  "authorList": ["Strendey"],
+  "credits": "The Forge and FML team, for making this API.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+FMLCorePlugin: io.github.strendey.damageindicators.instrumentation.FMLLoadingPlugin
+ModSide: CLIENT
+
