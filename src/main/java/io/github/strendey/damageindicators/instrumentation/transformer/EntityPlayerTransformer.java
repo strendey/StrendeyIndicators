@@ -10,10 +10,10 @@ public class EntityPlayerTransformer implements IClassTransformer {
 
     @Override
     public byte[] transform(String name, String transformedName, byte[] basicClass) {
-        if (name.equals("yz")) { // OBF = yz, Forge = net.minecraft.entity.player.EntityPlayer
+        if (name.equals("yz")) { // OBF = yz (wn for 1.8.9), Forge = net.minecraft.entity.player.EntityPlayer,
             try {
                 CtClass classFile = ClassPool.getDefault().makeClass(new ByteArrayInputStream(basicClass));
-                CtMethod targetMethod = classFile.getDeclaredMethod("getDisplayName");
+                CtMethod targetMethod = classFile.getDeclaredMethod("getDisplayName"); // Use getDisplayNameString to 1.8.9
                 targetMethod.insertBefore("this.displayname = null;");
                 return classFile.toBytecode();
             } catch (IOException e) {
